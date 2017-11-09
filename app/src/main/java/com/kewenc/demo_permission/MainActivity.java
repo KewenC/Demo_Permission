@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 //    http://blog.csdn.net/lan410812571/article/details/41960425
 //    http://blog.csdn.net/caroline_wendy/article/details/50587230
 //    http://www.jianshu.com/p/239d26d85720
-
+//http://blog.csdn.net/qq_32199531/article/details/73380577
     private static final int REQUEST_CODE = 0; // 请求码
     private TextView textView;
     // 所需的全部权限
