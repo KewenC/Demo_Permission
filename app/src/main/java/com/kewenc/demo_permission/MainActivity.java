@@ -14,28 +14,22 @@ public class MainActivity extends AppCompatActivity {
 //    http://www.jianshu.com/p/239d26d85720
 
     private static final int REQUEST_CODE = 0; // 请求码
-private TextView textView;
+    private TextView textView;
     // 所需的全部权限
     static final String[] PERMISSIONS = new String[]{
-//            Manifest.permission.RECORD_AUDIO,
-//            Manifest.permission.MODIFY_AUDIO_SETTINGS,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.MODIFY_AUDIO_SETTINGS,
             Manifest.permission.INSTALL_SHORTCUT,
             Manifest.permission.UNINSTALL_SHORTCUT,
-//            Manifest.permission.LOCATION_HARDWARE
+            Manifest.permission.LOCATION_HARDWARE,
+            Manifest.permission.WRITE_CONTACTS
     };
-
-//    @Bind(R.id.main_t_toolbar)
-//    Toolbar mTToolbar;
-
     private PermissionsChecker mPermissionsChecker; // 权限检测器
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
-//        ButterKnife.bind(this);
-//        mTToolbar = (Toolbar) findViewById(R.id.main_t_toolbar);
-//        setSupportActionBar(mTToolbar);
 
         mPermissionsChecker = new PermissionsChecker(this);
     }

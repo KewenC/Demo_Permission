@@ -3,6 +3,7 @@ package com.kewenc.demo_permission;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 
 /**
  * 检查权限的工具类
@@ -28,6 +29,7 @@ public class PermissionsChecker {
 
     // 判断是否缺少权限
     private boolean lacksPermission(String permission) {
+        Log.d("TAGF","lacksPermission="+permission+"="+ContextCompat.checkSelfPermission(mContext, permission));
         return ContextCompat.checkSelfPermission(mContext, permission) ==
                 PackageManager.PERMISSION_DENIED;
     }
